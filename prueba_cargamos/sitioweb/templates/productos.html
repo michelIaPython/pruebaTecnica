@@ -1,0 +1,103 @@
+{% extends "comun.html"%}
+
+{% block title %}Productos{% endblock %}
+
+{% block content%}
+<form method = 'POST'>
+
+<h3 aling='center'>AGREGAR NUEVO PRODUCTO</h3>
+<div class="form-group">
+<label for='sku'>SKU</label>
+<input 
+type = "sku"
+class ="form-control"
+id ="sku"
+name ="sku"
+placeholder ="Ingrese SKU"/>
+</div>
+
+<div class="form-group">
+<label for='nombre_p'>NOMBRE PRODCUTO</label>
+<input 
+type = "nombre_p"
+class ="form-control"
+id ="nombre_p"
+name ="nombre_p"
+placeholder ="Ingrese nombre"/>
+</div>
+
+<div class="form-group">
+<label for='precio_u'>PRECIO UNITARIO</label>
+<input 
+type = "precio_u"
+class ="form-control"
+id ="precio_u"
+name ="precio_u"
+placeholder ="Ingrese precio"/>
+</div>
+
+<div class="form-group">
+<label for='cantidad'>CANTIDAD</label>
+<input 
+type = "cantidad"
+class ="form-control"
+id ="cantidad"
+name ="cantidad"
+placeholder ="Ingrese cantidad"/>
+</div>
+
+<div class="form-group">
+<label for='tipo_prod'>TIPO PRODUCTO</label>
+<input 
+type = "tipo_prod"
+class ="form-control"
+id ="tipo_prod"
+name ="tipo_prod"
+placeholder ="Ingrese el tipo producto"/>
+</div>
+
+<div class="form-group">
+<label for='marca'>MARCA</label>
+<input 
+type = "marca"
+class ="form-control"
+id ="marca"
+name ="marca"
+placeholder ="Ingrese el tipo producto"/>
+</div>
+
+<div class="form-group">
+<label for='tienda'>TIENDA</label>
+<input 
+type = "tienda"
+class ="form-control"
+id ="tienda"
+name ="tienda"
+placeholder ="Ingrese la tienda"/>
+</div>
+
+<div class="form-group">
+<label for='stock_seguridad'>STOCK SEGURIDAD</label>
+<input 
+type = "stock_seguridad"
+class ="form-control"
+id ="stock_seguridad"
+name ="stock_seguridad"
+placeholder ="Stock Seguridad"/>
+</div>
+
+<div class="form-group">
+<label for='lote_pedido'>LOTE PEDIDO</label>
+<input 
+type = "lote_pedido"
+class ="form-control"
+id ="lote_pedido"
+name ="lote_pedido"
+placeholder ="Lote Pedido"/>
+</div>
+
+<button type="submit" class="btn btn-primary">Enviar</button>
+
+</form>
+
+{% endblock %}

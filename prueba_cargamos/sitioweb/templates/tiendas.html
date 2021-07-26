@@ -1,0 +1,76 @@
+{% extends "comun.html"%}
+
+{% block title %}Tiendas{% endblock %}
+
+{% block content%}
+
+
+<form method = 'POST'>
+
+<h3 aling='center'>AGREGAR NUEVA TIENDA</h3>
+
+<div class="form-group">
+<label for='id_tienda'>ID TIENDA</label>
+<input 
+type = "id_tienda"
+class ="form-control"
+id ="id_tienda"
+name ="id_tienda"
+placeholder ="ID"/>
+</div>
+
+<div class="form-group">
+<label for='tienda'>NOMBRE TIENDA</label>
+<input 
+type = "tienda"
+class ="form-control"
+id ="tienda"
+name ="tienda"
+placeholder ="Tienda"/>
+</div>
+
+<div class="form-group">
+<label for='direccion'>DIRECCION</label>
+<input 
+type = "direccion"
+class ="form-control"
+id ="direccion"
+name ="direccion"
+placeholder ="Direccion"/>
+</div>
+
+<div class="form-group">
+<label for='telefono'>TELEFONO</label>
+<input 
+type = "telefono"
+class ="form-control"
+id ="telefono"
+name ="telefono"
+placeholder ="Telefono"/>
+</div>
+
+<div class="form-group">
+<label for='ciudad'>CIUDAD</label>
+<input 
+type = "ciudad"
+class ="form-control"
+id ="ciudad"
+name ="ciudad"
+placeholder ="Ciudad"/>
+</div>
+
+<div class="form-group">
+<label for='tienda_cp'>CODIGO POSTAL</label>
+<input 
+type = "tienda_cp"
+class ="form-control"
+id ="tienda_cp"
+name ="tienda_cp"
+placeholder ="CP"/>
+</div>
+
+<button type="submit" class="btn btn-primary">Enviar</button>
+
+</form>
+
+{% endblock %}

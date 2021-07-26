@@ -1,0 +1,38 @@
+{% extends "comun.html"%}
+
+{% block title %}Inventarios{% endblock %}
+
+{% block content%}
+
+<div>
+<h1>Productos con Insuficiente Stock</h1>
+</div>
+<div>
+<table id="example" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th>Sku</th>
+                <th>Producto</th>
+                <th>Cantidad</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for stock in stocks %}
+            <tr>
+                <td>{{stock[0]}}</td>
+                <td>{{stock[1]}}</td>
+                <td>{{stock[2]}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Sku</th>
+                <th>Producto</th>
+                <th>Cantidad</th>
+            </tr>
+        </tfoot>
+    </table>
+<div>
+
+{% endblock %}
